@@ -39,15 +39,26 @@ i {
   display: flex;
   flex-direction: column;
 }
+.section-warn {
+  border: 3px solid rgb(161, 27, 4);
+}
 .h1 {
   font-size: 36px;
   font-family: "Zen Dots", cursive;
   font-weight: 200;
   padding: 10px;
   border-bottom: 3px dashed #4b636e;
+  position: relative;
 }
 .h1 i {
   font-size: 36px;
+}
+.count {
+  position: absolute;
+  top: 11px;
+  right: 27px;
+  color: white;
+  font-size: 18px;
 }
 ul {
   flex-grow: 3;
@@ -91,4 +102,13 @@ ul {
 }
 .reset-btn {
   background-color: #e80505;
+}
+.warn-txt {
+  display: none;
+}
+.warn {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(161, 27, 4);
 }
